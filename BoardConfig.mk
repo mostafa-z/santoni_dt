@@ -247,5 +247,8 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_FEATURE_AWARE := true
 
+# Lineage Build
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/santoni/BoardConfigVendor.mk

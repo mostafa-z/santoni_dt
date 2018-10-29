@@ -1,5 +1,5 @@
 #
-# Copyright 2015 The Android Open Source Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,12 +14,14 @@
 # limitations under the License.
 #
 
-# This file is executed by build/envsetup.sh, and can use anything
-# defined in envsetup.sh.
-#
-# In particular, you can add lunch options with the add_lunch_combo
-# function: add_lunch_combo generic-eng
+$(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
-for var in eng user userdebug; do
-  add_lunch_combo lineage_santoni-$var
-done
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+PRODUCT_NAME := lineage_santoni
+BOARD_VENDOR := Xiaomi
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+TARGET_VENDOR_PRODUCT_NAME := santoni

@@ -441,3 +441,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
+
+# ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/init.spectrum.rc:root/init.spectrum.rc \
+    $(LOCAL_PATH)/rootdir/init.spectrum.sh:root/init.spectrum.sh

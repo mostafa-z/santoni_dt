@@ -405,23 +405,23 @@
    <bool name="config_pinnerCameraApp">true</bool>
    
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    <add-resource type="bool" name="config_intrusiveBatteryLed"></add-resource>
  
     <!-- Does the battery LED support multiple colors?
          Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">true</bool>
+    <add-resource type="bool" name="config_multiColorBatteryLed"></add-resource>
  
     <!-- Do the battery/notification LEDs support pulsing?
          Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">true</bool>
+    <add-resource type="bool" name="config_ledCanPulse"></add-resource>
  
     <!-- Does the notification LED support multiple colors?
-         Used to decide if the user can change the colors
-    <bool name="config_multiColorNotificationLed">true</bool> -->
+         Used to decide if the user can change the colors -->
+    <add-resource type="bool" name="config_multiColorNotificationLed"></add-resource>
  
     <!-- Default value for proximity check on screen wake
      NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
-    <bool name="config_proximityCheckOnWake">true</bool>
-    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+    <add-resource type="bool" name="config_proximityCheckOnWake"></add-resource>
+    <add-resource type="bool" name="config_proximityCheckOnWakeEnabledByDefault"></add-resource>
 
 </resources>
